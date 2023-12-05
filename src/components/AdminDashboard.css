@@ -1,0 +1,141 @@
+/* AdminDashboard.css */
+
+/* Basic reset for padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Font family can be changed to match your design */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Container for the user list, add some padding and center it */
+  .user-details-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  /* Style for each user detail card */
+  .user-detail-card {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for cards */
+  .user-detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for the student label */
+  .student-label {
+    color: #555;
+    font-weight: bold;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .user-details-container {
+      width: 95%;
+    }
+  }
+
+  /* AdminDashboard.css */
+
+.user-detail-button {
+    display: block;
+    width: 100%;
+    background:  #f4f4f4;
+    color: #555;
+    /* margin: 30px auto; */
+    margin-bottom: 10px;
+    padding: 20px;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease;
+    outline: none;
+    font-weight: bold;
+    border: 1px solid transparent;
+  }
+  
+  .user-detail-button:hover {
+    background-color: #fff;
+  }
+
+
+  /* ... existing styles ... */
+
+.user-detail-status {
+    margin-bottom: 20px;
+  }
+  
+  .user-detail-status.pending {
+    color: yellow;
+  }
+  
+  .user-detail-status.approved {
+    color: green;
+  }
+  
+  .user-detail-status.rejected {
+    color: red;
+  }
+  
+  .action-buttons-container {
+    margin-top: 20px;
+  }
+  
+  .approve-button,
+  .reject-button {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .approve-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  .reject-button {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  .rejection-input-container {
+    margin-top: 20px;
+  }
+  
+  .rejection-reason-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .reject-confirm-button {
+    background-color: #008CBA; /* Blue */
+    color: white;
+    cursor: pointer;
+  }
+  
+  
+  

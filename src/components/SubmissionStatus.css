@@ -1,0 +1,19 @@
+.submission-status-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #FFA500; /* Yellow color */
+    font-size: 20px;
+  }
+  
+  .status-circle {
+    height: 20px;
+    width: 20px;
+    background-color: #FFA500; /* Yellow color */
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  

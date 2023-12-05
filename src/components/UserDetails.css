@@ -1,0 +1,370 @@
+/* General Styles */
+.user-details {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .user-details h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-details-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .user-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .user-detail-key {
+    color: #555;
+    font-weight: 600;
+  }
+  
+  .user-detail-value {
+    color: #333;
+    overflow-wrap: break-word;
+  }
+  
+  /* Status Styles */
+  .user-detail-status {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .status-indicator {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  .status-pending {
+    background-color: #ffc107;
+  }
+  
+  .status-approved {
+    background-color: #28a745;
+  }
+  
+  .status-rejected {
+    background-color: #dc3545;
+  }
+  
+  /* Button Styles */
+  .action-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .approve-button, .reject-button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .approve-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .approve-button:hover {
+    background-color: #218838;
+  }
+  
+  .reject-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .reject-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Rejection Input Styles */
+  .rejection-input-container {
+    margin-top: 20px;
+  }
+  
+  .rejection-reason-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    font-size: 0.9rem;
+    height: 100px;
+    resize: none;
+    transition: border-color 0.2s, box-shadow 0.2s; /* Smooth transition for focus */
+  }
+  
+  .rejection-reason-input:focus {
+    border-color: #dc3545; 
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); /* Glow effect */
+  }
+  
+  
+  .reject-confirm-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .reject-confirm-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Download Button Styles */
+  .download-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover,
+  .download-button:focus {
+    background-color: #0056b3;
+  }
+  
+
+  .user-details {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif; /* or any other font you prefer */
+  }
+  
+  .user-details h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .user-details-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-detail {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px 20px;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .user-detail-key {
+    font-weight: bold;
+    color: #555;
+    padding-right: 20px; /* Add space between the key and the value */
+    text-align: right; /* Align the text to the right */
+  }
+  
+  .user-detail-value {
+    overflow-wrap: break-word;
+  }
+  
+  .download-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    margin-left: 15px; /* Space from the label */
+    cursor: pointer; /* Change cursor to pointer */
+    border: none; /* Remove border */
+  }
+  
+  .download-button:hover,
+  .download-button:focus {
+    background-color: #0056b3;
+  }
+
+  /* Add this CSS to the UserDetails.css file */
+
+/* ... existing CSS ... */
+
+/* Button styles */
+.approve-button, .reject-button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .approve-button {
+    background-color: green;
+    color: white;
+  }
+  
+  .approve-button:hover {
+    opacity: 0.8;
+  }
+  
+  .reject-button {
+    background-color: red;
+    color: white;
+  }
+  
+  .reject-button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Add a container for the buttons if not already present */
+  .action-buttons-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .status-indicator {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .status-pending {
+    background-color: yellow;
+  }
+  
+  .status-approved {
+    background-color: green;
+  }
+  
+  .status-rejected {
+    background-color: red;
+  }
+  
+  
+  .rejection-reason-input textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+  }
+  
+  .rejection-reason-input textarea:focus {
+    border-color: #ff414d;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(255, 65, 77, 0.6);
+  outline: none;
+  border: none;
+  }
+  
+  .reject-confirm-button {
+    background-color: #ff414d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .reject-confirm-button:hover {
+    background-color: #e5373a;
+  }
+  
+  .reject-confirm-button:active {
+    background-color: #cc3333;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+  }
+  
+  
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dimmed background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .approval-popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px; /* Adjust width as necessary */
+    text-align: center;
+  }
+  
+  .approval-popup p {
+    margin: 0 0 20px 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .approval-popup button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .approval-popup button:hover {
+    background-color: #218838;
+  }
+  
+
+   
